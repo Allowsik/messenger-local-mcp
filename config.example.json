@@ -1,0 +1,8 @@
+{
+  "homeserver": "http://127.0.0.1:18008",
+  "user_id": "@owner:messenger.localhost",
+  "allowed_rooms": {},
+  "database": "runtime/messages.sqlite3",
+  "bridge_database": "runtime/meta/bridge.db",
+  "send_mode": "disabled"
+}

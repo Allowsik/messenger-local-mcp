@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "messenger-local-mcp"
+version = "0.2.0"
+description = "Local Messenger MCP with allowlisted chats, fresh reads and durable text sending through a self-hosted Matrix bridge"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = ["mcp>=1.30,<2", "PyYAML>=6.0.3,<7"]
+
+[project.scripts]
+messenger-mcp = "messenger_mcp.cli:entrypoint"
+messenger-mcp-server = "messenger_mcp.server:main"
+
+[tool.setuptools.packages.find]
+include = ["messenger_mcp*"]
+
+[tool.setuptools]
+include-package-data = false

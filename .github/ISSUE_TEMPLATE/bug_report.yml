@@ -1,0 +1,22 @@
+name: Bug report
+description: Report a problem without credentials or private messages
+body:
+  - type: markdown
+    attributes:
+      value: Never paste passwords, cookies, tokens, raw databases or real conversation text.
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction with synthetic data
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: OS, Python version and MCP client
